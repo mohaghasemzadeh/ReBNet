@@ -3,7 +3,7 @@ This repository implements the residual binarization scheme in ReBNet: Residual 
 
 https://arxiv.org/abs/1711.01243
 
-##Training ReBNet
+## Training ReBNet
 For training RebNet, you should have the following packages installed:
   Keras
   tensorflow
@@ -46,7 +46,7 @@ For training RebNet for Imagenet:
   Run the script located at "training-software/Imagenet/Binary.py" to train Imagenet. The following command trains using 4 gpus, each gpu with a batch size of 64  (total batch size = 256):
     python Binary.py --batch-per-gpu 64 --num-gpus 4
 
-##Accuracy Evaluation of ReBNet:
+## Accuracy Evaluation of ReBNet:
   open the corresponding "Binary.py" script, change Train=False, Evaluate=True. Then run python "Binary.py".
   We are providing the pretrained weights, but those weights will be replaced by your trained weights in case you train the models from scratch.
 

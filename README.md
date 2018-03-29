@@ -4,21 +4,22 @@ This repository implements the residual binarization scheme in ReBNet: Residual 
 https://arxiv.org/abs/1711.01243
 
 ## Training ReBNet
+### Prerequisites
 For training RebNet, you should have the following packages installed:
-  Keras
-  tensorflow
-  mxnet (only if you want to train Imagenet)
-
+  * Keras
+  * Tensorflow
+  * mxnet (only if you want to train Imagenet)
+### Training Scripts
 Use Tensorflow backend for training RenNet for the following datasets:
-  MNIST:
-      open "training-software/MNIST-CIFAR-SVHN/Binary.py". On top of the file, set dataset="MNIST", Train=True, Evaluate=False. then run "python Binary.py"
-  CIFAR-10:
-      open "training-software/MNIST-CIFAR-SVHN/Binary.py". On top of the file, set dataset="CIFAR-10", Train=True, Evaluate=False. then run "python Binary.py"
-  SVHN:
-      open "training-software/MNIST-CIFAR-SVHN/Binary.py". On top of the file, set dataset="SVHN", Train=True, Evaluate=False.
-      download the SVHN dataset from the these three links: http://ufldl.stanford.edu/housenumbers/train_32x32.mat, http://ufldl.stanford.edu/housenumbers/test_32x32.mat, http://ufldl.stanford.edu/housenumbers/extra_32x32.mat
-      place the three downloaded files in "training-software/MNIST-CIFAR-SVHN/svhn_data"
-      run "python Binary.py"
+  #### MNIST:
+      * open "training-software/MNIST-CIFAR-SVHN/Binary.py". On top of the file, set dataset="MNIST", Train=True, Evaluate=False. then run "python Binary.py"
+  #### CIFAR-10:
+      * open "training-software/MNIST-CIFAR-SVHN/Binary.py". On top of the file, set dataset="CIFAR-10", Train=True, Evaluate=False. then run "python Binary.py"
+  #### SVHN:
+      * open "training-software/MNIST-CIFAR-SVHN/Binary.py". On top of the file, set dataset="SVHN", Train=True, Evaluate=False.
+      * download the SVHN dataset from the these three links: http://ufldl.stanford.edu/housenumbers/train_32x32.mat, http://ufldl.stanford.edu/housenumbers/test_32x32.mat, http://ufldl.stanford.edu/housenumbers/extra_32x32.mat
+      * place the three downloaded files in "training-software/MNIST-CIFAR-SVHN/svhn_data"
+      * run "python Binary.py"
 
 For training RebNet for Imagenet:
   For speedup of Imagenet training, you need to uninstall your Keras and install an older version of it.

@@ -25,7 +25,6 @@ Use Tensorflow backend for MNIST, CIFAR-10, and SVHN. Use MXNET backend for Imag
   #### CIFAR-10:
    * Open "training-software/MNIST-CIFAR-SVHN/Binary.py". 
    * On top of the file, set:
-   * On top of the file, set:
      ```
      dataset="CIFAR-10"
      Train=True

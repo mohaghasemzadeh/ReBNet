@@ -15,9 +15,9 @@ sys.path.insert(0, '..')
 from binarization_utils import *
 from model_architectures import get_model
 
-dataset='CIFAR-10'
-Train=True
-Evaluate=False
+dataset='SVHN'
+Train=False
+Evaluate=True
 batch_size=100
 epochs=200
 

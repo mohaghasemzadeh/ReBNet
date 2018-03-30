@@ -70,7 +70,7 @@ Use Tensorflow backend for training RenNet for the following datasets:
     args.data_val='/home/hamid/imagenet/val.rec'
     ``` 
 
-  * to use the MXNET backend, change the .json file (~/.keras/keras.json) file: 
+  * to use the MXNET backend, change the .json file (~/.keras/keras.json): 
   ```
   "backend": "tensorflow" -> "backend": "mxnet"
   ```

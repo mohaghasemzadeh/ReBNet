@@ -19,12 +19,12 @@ Use Tensorflow backend for training RenNet for the following datasets:
      Train=True
      Evaluate=False
      ``` 
-   * Run 
+   * Save the script and run:
      ```
      python Binary.py
      ```
   #### CIFAR-10:
-   * open "training-software/MNIST-CIFAR-SVHN/Binary.py". 
+   * Open "training-software/MNIST-CIFAR-SVHN/Binary.py". 
    * On top of the file, set:
    * On top of the file, set:
      ```
@@ -32,22 +32,24 @@ Use Tensorflow backend for training RenNet for the following datasets:
      Train=True
      Evaluate=False
      ``` 
-   * Run 
+   * Save the script and run: 
      ```
      python Binary.py
      ```
   #### SVHN:
-   * open "training-software/MNIST-CIFAR-SVHN/Binary.py". 
-   On top of the file, set:
+   
+   * Download the SVHN dataset from the these three links: [train.mat](http://ufldl.stanford.edu/housenumbers/train_32x32.mat), [test.mat](http://ufldl.stanford.edu/housenumbers/test_32x32.mat), [extra.mat](http://ufldl.stanford.edu/housenumbers/extra_32x32.mat)
+   * Place the three downloaded files in "training-software/MNIST-CIFAR-SVHN/svhn_data"
+   
+   * Open "training-software/MNIST-CIFAR-SVHN/Binary.py". 
    * On top of the file, set:
      ```
      dataset="SVHN"
      Train=True
      Evaluate=False
      ``` 
-   * download the SVHN dataset from the these three links: [train.mat](http://ufldl.stanford.edu/housenumbers/train_32x32.mat), [test.mat](http://ufldl.stanford.edu/housenumbers/test_32x32.mat), [extra.mat](http://ufldl.stanford.edu/housenumbers/extra_32x32.mat)
-   * place the three downloaded files in "training-software/MNIST-CIFAR-SVHN/svhn_data"
-   * Run 
+     
+   * Save the script and run:
      ```
      python Binary.py
      ```

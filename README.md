@@ -76,12 +76,12 @@ The repo is organized as follows:
 	  If you do not wish to do that, you need to write the training script yourself since our code works with the older version of Keras.
 		- The script that trains Imagenet is located at "training-software/Imagenet/Binary.py". Before running this script, you need to install the MXNET backend for Keras. MXNET allows you to use multiple GPUs when training with Keras and speeds up the training. Please be advised that, since MXNET is not officially supported by the latest version of Keras, you need to install an older version of Keras. Follow this link to install the old Keras library with MXNET backend support: https://devblogs.nvidia.com/scaling-keras-training-multiple-gpus
 		- Once you install the old version of Keras with MXNET support, you need to download the Imagenet dataset and create two record (.rec) files containing training and validation images. The .rec file is a single file that contains all of the images of Imagenet. Using .rec files helps you speed-up the training. Instruction on how to create and use .rec files can also be found in the above link. 
-		- you need to open "Binary.py" and specify the directory where the Imagenet data is. Change the following two lines and put the correct address to the .rec files you created:
+		- You need to open "Binary.py" and specify the directory where the Imagenet data is. Change the following two lines and put the correct address to the .rec files you created:
 		```
 		args.data_train='/home/hamid/imagenet/train.rec'
 		args.data_val='/home/hamid/imagenet/val.rec'
 		``` 
-		- to use the MXNET backend, change the .json file (~/.keras/keras.json): 
+		- To use the MXNET backend, change the .json file (~/.keras/keras.json): 
 		```
 		"backend": "tensorflow" -> "backend": "mxnet"
 		```

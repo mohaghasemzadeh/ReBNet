@@ -9,7 +9,7 @@ For training RebNet, you should have the following packages installed:
   * Tensorflow
   * mxnet (only if you want to train Imagenet)
 ### Training Scripts
-Use Tensorflow backend for training RenNet for the following datasets:
+Use Tensorflow backend for MNIST, CIFAR-10, and SVHN. Use MXNET backend for Imagenet.
   #### MNIST:
    * Open "training-software/MNIST-CIFAR-SVHN/Binary.py". 
    * On top of the file, set:

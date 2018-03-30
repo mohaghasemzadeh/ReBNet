@@ -89,7 +89,7 @@ Use Tensorflow backend for training RenNet for the following datasets:
   ```
   python Binary.py
   ```
-  We are providing the pretrained weights, but those weights will be replaced by your trained weights in case you train the models from scratch.
+  We are providing the pretrained weights in "models/DATASET/x_residuals.h5" with x being the number of levels in residual binarization. These weights will be replaced by your trained weights in case you train the models from scratch.
 
 
 

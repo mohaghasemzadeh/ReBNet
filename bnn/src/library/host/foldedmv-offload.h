@@ -1,5 +1,5 @@
 /******************************************************************************
- *  Copyright (c) 2016, Xilinx, Inc.
+ *  Copyright (c) 2018, ACES Lab, Univesity of California San Diego, CA, US.
  *  All rights reserved.
  *
  *  Redistribution and use in source and binary forms, with or without
@@ -27,6 +27,12 @@
  *  WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
  *  OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
  *  ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ *
+ *  IMPORTANT NOTE:
+ *  This work builds upon the binary CNN libary (BNN-PYNQ) provided by the following:
+ *  Copyright (c) 2016, Xilinx, Inc.
+ *  link to the original library (BNN-PYNQ) : https://github.com/Xilinx/BNN-PYNQ
  *
  *****************************************************************************/
 /******************************************************************************

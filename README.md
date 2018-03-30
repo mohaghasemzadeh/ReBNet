@@ -62,13 +62,16 @@ Use Tensorflow backend for training RenNet for the following datasets:
 
   * Once you install the old version of Keras with MXNET support, you need to download the Imagenet dataset and create two record (.rec) files containing training and validation images. The .rec file is a single file that contains all of the images of Imagenet. Using .rec files helps you speed-up the training. Instruction on how to create and use .rec files can also be found in the above link.
   
-  * you need to open "Binary.py" and specify the directory where the Imagenet data is. Change the following two lines and put the correct address to the ".rec" files you created:
+  * you need to open "Binary.py" and specify the directory where the Imagenet data is. Change the following two lines and put the correct address to the .rec files you created:
     ```
     args.data_train='/home/hamid/imagenet/train.rec'
     args.data_val='/home/hamid/imagenet/val.rec'
     ``` 
 
-  * to use the MXNET backend, change the .json file (~/.keras/keras.json) file: "backend": "tensorflow" -> "backend": "mxnet"
+  * to use the MXNET backend, change the .json file (~/.keras/keras.json) file: 
+  ```
+  "backend": "tensorflow" -> "backend": "mxnet"
+  ```
 
   * Run the script located at "training-software/Imagenet/Binary.py" to train Imagenet. The following command trains using 4 gpus, each gpu with a batch size of 64  (total batch size = 256):
    ```
@@ -76,7 +79,16 @@ Use Tensorflow backend for training RenNet for the following datasets:
    ```
 
 ## Accuracy Evaluation of ReBNet:
-  open the corresponding "Binary.py" script, change Train=False, Evaluate=True. Then run python "Binary.py".
+  * Open the corresponding "Binary.py" script, 
+  * On top of the file, set:
+  ```
+  Train=False
+  Evaluate=True
+  ```
+  * Run 
+  ```
+  python Binary.py
+  ```
   We are providing the pretrained weights, but those weights will be replaced by your trained weights in case you train the models from scratch.
 
 

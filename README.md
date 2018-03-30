@@ -1,6 +1,5 @@
 # ReBNet
-This repository implements the residual binarization scheme in ReBNet: Residual Binarized Neural Network. Please use the following reference for citation:
-
+This repository implements the residual binarization scheme of "ReBNet: Residual Binarized Neural Network". Please use the following reference for citation:
 https://arxiv.org/abs/1711.01243
 
 ## Training ReBNet
